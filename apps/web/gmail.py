@@ -65,7 +65,7 @@ ctx.keymap(
         "advance to next chat": send_key_to_page("ctrl-."),
         "advance to previous chat": send_key_to_page("ctrl-,"),
         # "send": send_key_to_page("ctrl-enter"),
-        "send": send_key_to_page("cmd-enter"),
+        "send new email": send_key_to_page("cmd-enter"),
         # "add cc": send_key_to_page("ctrl-shift-c"),
         "add cc": send_key_to_page("cmd-shift-c"),
         # "add bcc": send_key_to_page("ctrl-shift-b"),

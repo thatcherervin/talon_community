@@ -52,8 +52,8 @@ def set_voice_type(type):
 
 sleepy.keymap(
     {
-        "talon sleep": lambda m: set_voice_type(VoiceType.SLEEPING),
-        "talon wake": lambda m: set_voice_type(last_voice_type),
+        "toggle sleep | toggle off | sleep now | evan sucks": lambda m: set_voice_type(VoiceType.SLEEPING),
+        "speech activate": lambda m: set_voice_type(last_voice_type),
         "dragon mode": lambda m: set_voice_type(VoiceType.DRAGON),
         "dictation mode": lambda m: set_voice_type(VoiceType.DICTATION),
         "talon mode": lambda m: set_voice_type(VoiceType.TALON),

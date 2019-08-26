@@ -61,7 +61,7 @@ context.keymap(
         + "until"
         + optional_numerals: select_lines_function,
         # Finding text
-        "find": Key("cmd-f"),
+        "search": Key("cmd-f"),
         "find next <dgndictation>": jump_to_next_word_instance,
         # Clipboard
         "clone": Key("alt-shift-down"),
@@ -84,7 +84,7 @@ context.keymap(
         "stippy": Key("cmd-alt-right"),
         "last tab": Key("cmd-alt-left"),
         "new tab": Key("cmd-n"),
-        "jump" + optional_numerals: jump_tabs,
+        "tab jump" + optional_numerals: jump_tabs,
         # Menu
         "save": Key("cmd+s"),
         "open": Key("cmd+o"),
@@ -93,6 +93,8 @@ context.keymap(
         # various
         "comment": Key("cmd-shift-7"),
         "search all": Key("cmd-shift-f"),
-        "(drop-down | drop)": Key("ctrl-space"),
+        "drop-down": Key("ctrl-space"),
+        "copy it": Key("cmd+c"),
+        "paste it": Key("cmd+v"),
     }
 )

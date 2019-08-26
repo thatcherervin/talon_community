@@ -28,7 +28,7 @@ formatters = normalise_keys(
     {
         "tree": (True, lambda i, word, _: word[0:3] if i == 0 else ""),
         "quad": (True, lambda i, word, _: word[0:4] if i == 0 else ""),
-        "(cram | camel)": (
+        "(camel)": (
             True,
             lambda i, word, _: word if i == 0 else word.capitalize(),
         ),

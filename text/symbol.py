@@ -9,7 +9,7 @@ keymap = {
     "tilde": "~",
     "(bang | exclamation point | clamor)": "!",
     "(dollar [sign] | dolly)": "$",
-    "(downscore | crunder)": "_",
+    "(downscore | crunder | score )": "_",
     "colon": ":",
     "(lparen | [left] paren | precorp )": "(",
     "(rparen | are paren | right paren | precose)": ")",
