@@ -3,6 +3,7 @@
 
 # import eye
 import time
+import math
 from talon import ctrl, tap, ui
 from talon.voice import Context, Key
 
@@ -72,6 +73,19 @@ def mouse_scroll(amount):
 
     return scroll
 
+def mouse_smooth_scroll(amount):
+    def scroll(m):
+        total_time = 0.1
+        interval = 0.007
+        depth = int(total_time // interval)
+        split = amount / depth
+        for x in range(depth):
+            # split_ret = int((split) * (1 - 0.8 * (((x - (depth / 2)) / float((depth / 2))) ** 2)))
+            ctrl.mouse_scroll(y=split)
+            time.sleep(interval)
+
+    return scroll
+
 
 def mouse_drag(m):
     x, y = click_pos(m)
@@ -126,8 +140,8 @@ keymap = {
     "do park": [delayed_dubclick, Key('cmd-v')],
 	"do koosh": [delayed_dubclick, Key('cmd-c')],
 
-    "wheel down": mouse_scroll(200),
-    "wheel up": mouse_scroll(-200),
+    "(wheel down | downer)": mouse_smooth_scroll(400),
+    "(wheel up | upper)": mouse_smooth_scroll(-400),
     "wheel down here": [mouse_center, mouse_scroll(200)],
     "wheel up here": [mouse_center, mouse_scroll(-200)],
     "mouse center": mouse_center,
