@@ -62,7 +62,7 @@ ctx.keymap(
         # navigation
         "back": Key("cmd-["),
         "(forward | next)": Key("cmd-]"),
-        "(up | (parent [folder]))": Key("cmd-up"),
+        # "(up | (parent [folder]))": Key("cmd-up"),
         "(cycle | switch) [window]": Key("cmd-`"),
         "computer": Key("cmd-shift-c"),
         "desktop": Key("cmd-shift-d"),

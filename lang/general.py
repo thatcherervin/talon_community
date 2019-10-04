@@ -79,5 +79,8 @@ ctx.keymap(
         # Comments
         "comment see": "// ",
         "comment py": "# ",
+
+        # PERSONAL COMMANDS
+        "printer at gmail": "@gmail.com"
     }
 )

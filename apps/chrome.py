@@ -216,6 +216,7 @@ context.keymap(
             Key("enter"),
         ],
         "open most recently downloaded file": open_most_recently_downloaded_file,
+        "strike": Key("cmd-shift-x"),
     }
 )
 
