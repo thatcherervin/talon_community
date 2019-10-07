@@ -46,7 +46,7 @@ symbols = normalise_keys(
         "(square | L square | left square | left square bracket)": "[",
         "(R square | right square | right square bracket)": "]",
         "(slash | forward slash)": "/",
-        "backslash": "\\",
+        "(backslash | black)": "\\",
         "(minus | dash)": "-",
         "(equals | smaqual)": "=",
     }
