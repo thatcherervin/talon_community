@@ -17,9 +17,13 @@ def load_config_json(filename, default=dict):
         print("creating missing resource file ", filename)
         with resource.open(filename, "w") as f:
             f.write(json.dumps(default()))
-
     try:
         return json.load(resource.open(filename))
     except Exception as e:
         print(f"error opening {filename}: {e}")
         return default()
+
+
+def save_config_json(filename, config):
+    with resource.open(filename, "w") as f:
+        f.write(json.dumps(config))

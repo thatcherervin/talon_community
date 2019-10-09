@@ -61,6 +61,8 @@ def replace_words(words, mapping, count):
 def remove_dragon_junk(word):
     if word == ".\\point\\point":
         return "point"
+    elif word == ".\\period\\period":
+        return "period"
     else:
         return str(word).lstrip("\\").split("\\", 1)[0].replace("-", " ").strip()
 
@@ -150,26 +152,6 @@ def word(m):
         insert(text.lower())
     except AttributeError:
         pass
-
-
-def surround(left_surrounder, right_surrounder=None):
-    def func(i, word, last):
-        if i == 0:
-            word = left_surrounder + word
-        if last:
-            word += right_surrounder or left_surrounder
-        return word
-
-    return func
-
-
-def rot13(i, word, _):
-    out = ""
-    for c in word.lower():
-        if c in string.ascii_lowercase:
-            c = chr((((ord(c) - ord("a")) + 13) % 26) + ord("a"))
-        out += c
-    return out
 
 
 numeral_map = dict((str(n), n) for n in range(0, 10))
