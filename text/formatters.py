@@ -122,7 +122,7 @@ surrounders = normalise_keys(
         "dunder": (False, Surround("__")),
         "angler": (False, Surround("<", ">")),
         "brax": (False, Surround("[", "]")),
-        "kirk": (False, Surround("{", "}")),
+        "kirker": (False, Surround("{", "}")),
         "precoif": (False, Surround('("', '")')),
         "prex": (False, Surround("(", ")")),
     }

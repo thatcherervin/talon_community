@@ -11,13 +11,14 @@ keymap = {
     "(dollar [sign] | dolly)": "$",
     "(downscore | crunder | score )": "_",
     "colon": ":",
-    "(lparen | [left] paren | precorp )": "(",
-    "(rparen | are paren | right paren | precose)": ")",
+    "(lparen | [left] paren | precorp | sore )": "(",
+    "(rparen | are paren | right paren | precose | close)": ")",
     "(brace | left brace | kirksorp)": "{",
     "(rbrace | are brace | right brace | kirkos)": "}",
     "(angle | left angle | less than)": "<",
     "(rangle | are angle | right angle | greater than)": ">",
     "(star | asterisk)": "*",
+    "power": "**",
     "(pound | hash [sign] | octo | number sign)": "#",
     "percent [sign]": "%",
     "caret": "^",
@@ -38,6 +39,9 @@ keymap = {
     "(dot dot | dotdot)": "..",
     "(ellipsis | dot dot dot | dotdotdot)": "...",
     # unnecessary: use repetition commands?
+    # personal
+    "signed": "sind(",
+    "coastie": "cosd(",
 }
 
 ctx.keymap(keymap)
